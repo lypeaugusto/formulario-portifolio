@@ -15,15 +15,15 @@ body {
 }
 span{color: white;}
 form input {
-  width: 250px;
-  height: 40px;
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  width: 100%;
+  padding: 10px 0;
   font-size: 16px;
-  transition: border-color 0.3s ease-in-out;
-  background-color: transparent;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
 }
 input::placeholder{
   color: white;
@@ -38,7 +38,7 @@ form input:focus {
 div#ec{
   display: flex;
   gap: 20px;
-  padding-left: 25px;
+  padding-left: 10px;
 }
 a{
   color: white;
@@ -54,7 +54,7 @@ button{
   font-size: 2em;
   border-radius: 5px;
   opacity: .5;
-  top: 25vh;
+  top: 36vh;
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -388,4 +388,40 @@ form {
   left: 50%;
   transform: translate(-50%, -50%);
   /* Adicione outros estilos necessários para o formulário */
+}
+button {
+  /* your existing button styles */
+
+  @media screen and (max-width: 768px) {
+      /* Adjust styles for screens with a maximum width of 768 pixels */
+      width: 200px;
+      height: 40px;
+      font-size: 1.5em;
+      
+  }
+
+  /* Add more media queries for other screen sizes if needed */
+}
+
+.light {
+  /* your existing light styles */
+}
+
+/* Add more styles for different screen sizes using media queries */
+
+.header {
+  /* your existing header styles */
+}
+
+#footer {
+  /* your existing footer styles */
+}
+
+form {
+  /* your existing form styles */
+
+  @media screen and (max-width: 768px) {
+      /* Adjust styles for screens with a maximum width of 768 pixels */
+      /* Add specific styles for smaller screens */
+  }
 }
